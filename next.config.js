@@ -4,10 +4,10 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   basePath: process.env.NEXT_PUBLIC_BASE_PATH,
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
-  images: {
-    loader: 'akamai',
-    path: '',
-  },
+  // images: {
+  //   loader: 'akamai',
+  //   path: '',
+  // },
 }
 
 
