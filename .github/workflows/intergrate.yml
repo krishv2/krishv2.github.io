@@ -35,6 +35,8 @@ jobs:
         run: touch ./out/.nojekyll
       - name: Add .cname file
         run: echo 'https://krishv2.github.io/' > ./out/CNAME
+      - name: Add .deploy
+        run: gh-pages -d out -t true
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
