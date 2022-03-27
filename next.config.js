@@ -12,6 +12,6 @@ const nextConfig = {
 
 
 module.exports = {
-  basePath: '/krishv2.github.io',
-  assetPrefix: isProd ? '/krishv2.github.io/': '',
+  basePath: '',
+  assetPrefix: isProd ? '': '',
 }
