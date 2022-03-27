@@ -30,8 +30,8 @@ const Home: NextPage = () => {
       </Grid>
 
       <Grid item xs={12}>
-        <div style={{display:'flex',justifyContent:'center', marginTop:'100px'}} >
-          {/* <Image src={Me} alt="Krishan" width={250} height={250} style={{borderRadius:'50%'}}/> */}
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '100px' }} >
+          <Image src={Me} alt="Krishan" width={250} height={250} style={{ borderRadius: '50%' }} />
         </div>
 
       </Grid>

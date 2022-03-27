@@ -3,7 +3,7 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   basePath: '/krishv2.github.io',
-  assetPrefix: isProd ? '/krishv2.github.io/': '',
+  assetPrefix: isProd ? '/krishv2.github.io/' : '',
   // images: {
   //   loader: 'akamai',
   //   path: '',
@@ -13,5 +13,9 @@ const nextConfig = {
 
 module.exports = {
   basePath: '',
-  assetPrefix: isProd ? '': '',
+  assetPrefix: isProd ? '' : '',
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
 }
