@@ -39,7 +39,7 @@ const ToggleThumb = styled.span`
   border-radius: 50%;
   background: white;
   transition: transform 0.25s ease-in-out;
-  transform: ${(p: { activeTheme: string| undefined }) =>
+  transform: ${(p: { activeTheme: string | undefined }) =>
     p.activeTheme === "dark"
       ? "translate3d(calc(var(--toggle-width) - var(--toggle-height)), 0, 0)"
       : "none"};
@@ -56,7 +56,9 @@ const ThemeToggle = () => {
 
   useEffect(() => {
     document.body.dataset.theme = activeTheme;
-    window.localStorage.setItem("theme", activeTheme);
+    if (activeTheme) {
+      window.localStorage.setItem("theme", activeTheme);
+    }
   }, [activeTheme]);
 
   return (
@@ -66,8 +68,8 @@ const ThemeToggle = () => {
       type="button"
       onClick={() => setActiveTheme(inactiveTheme)}>
       <ToggleThumb activeTheme={activeTheme} />
-      <span arial-hidden={true} style={{fontSize:'15px'}}>🌙</span>
-      <span arial-hidden={true} style={{fontSize:'15px'}}>☀️</span>
+      <span arial-hidden={true} style={{ fontSize: '15px' }}>🌙</span>
+      <span arial-hidden={true} style={{ fontSize: '15px' }}>☀️</span>
     </ToggleButton>
   );
 };
