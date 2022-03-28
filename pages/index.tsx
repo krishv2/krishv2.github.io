@@ -30,9 +30,9 @@ const Home: NextPage = () => {
       </Grid>
 
       <Grid item xs={12}>
-        <div className={'profile-pic'} >
-          
-        </div>
+        <p>
+          Welcome to my portfolio :)
+        </p>
 
       </Grid>
 
