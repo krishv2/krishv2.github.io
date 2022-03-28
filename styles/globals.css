@@ -1,15 +1,15 @@
 body,
 body[data-theme="light"] {
   --color-text-primary: #27201a;
-  --color-text-secondary: #684c72;
-  --color-bg-primary: #fff;
+  --color-text-secondary: #000000;
+  --color-bg-primary: #DEE4E7;
   --color-bg-toggle: #1E90FF; 
 }
 
 body[data-theme="dark"] {
   --color-text-primary: #e3e3e3;
-  --color-text-secondary: #df99f5;
-  --color-bg-primary: #15232d;
+  --color-text-secondary: #ffffff;
+  --color-bg-primary: #212121;
   --color-bg-toggle: #a9a9a9;
 }
 
@@ -58,4 +58,15 @@ h1 {
   justify-content: flex-end;
   padding-top: 20px;
   padding-right: 20px;
+}
+
+.profile-pic{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    border-radius: 50%;    
+}
+
+.my-image{
+  border-radius: 50%;
 }
